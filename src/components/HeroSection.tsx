@@ -67,9 +67,9 @@ const HeroSection = () => {
           </motion.p>
 
           <h1 className="text-4xl md:text-6xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6">
-            <span className="text-foreground">I am an SQA Engineer</span>
+            <span className="text-foreground">I am a Jr. SQA Engineer With</span>
             <br />
-            <span className="text-foreground">With Expertise in </span>
+            <span className="text-foreground">Expertise in </span> <br />
             <span className="text-primary typing-cursor inline-block min-w-[4ch]">
               {displayText}
             </span>
@@ -81,9 +81,9 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
-            className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed"
+            className="text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed"
           >
-            Also a <span className="text-primary font-semibold">Vibe Coder</span> & Modern attention to detail oriented engineer
+            A modern QA Engineer focused on quality, reliability, and user experience. I find bugs, validate functionality, and help build software that users can trust.
           </motion.p>
 
           <motion.div

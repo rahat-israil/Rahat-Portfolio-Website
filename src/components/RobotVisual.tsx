@@ -50,7 +50,7 @@ const RobotVisual = () => {
       ref={wrapRef}
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
-      className="relative w-full max-w-[400px] mx-auto aspect-square flex items-center justify-center select-none"
+      className="relative w-full max-w-[440px] mx-auto aspect-square flex items-center justify-center select-none"
       style={{ perspective: 1000 }}
     >
       {/* Ambient glows */}
