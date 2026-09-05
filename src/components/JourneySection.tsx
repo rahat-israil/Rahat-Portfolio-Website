@@ -17,22 +17,22 @@ const data: Record<TabKey, TimelineItem[]> = {
   education: [
     {
       title: "B.Sc. in Computer Science & Engineering",
-      subtitle: "Daffodil International University",
-      period: "2020 - 2024",
+      subtitle: "Bangladesh University of Business & Technology",
+      period: "2022 - 2026",
       description:
-        "Focused on software engineering, data structures, and quality assurance. Completed final-year project on automated testing frameworks.",
+        "Focused on software engineering, data structures, and quality assurance. Contributed as the manual tester for the team's final-year SDP(Software Development Project).",
     },
     {
       title: "Higher Secondary Certificate (HSC)",
       subtitle: "Science Group",
-      period: "2017 - 2019",
+      period: "2018 - 2021",
       description:
         "Completed HSC with a strong foundation in mathematics, physics, and computer fundamentals.",
     },
     {
       title: "Secondary School Certificate (SSC)",
       subtitle: "Science Group",
-      period: "2015 - 2017",
+      period: "2016 - 2018",
       description:
         "Built early interest in technology, problem-solving, and analytical thinking.",
     },
@@ -72,39 +72,39 @@ const data: Record<TabKey, TimelineItem[]> = {
     },
   ],
   experience: [
-    {
-      title: "SQA Engineer",
-      company: "XYZ",
-      subtitle: "Current Role - Remote",
-      period: "2024 - Present",
-      description: [
-        "Designing manual and automated test suites and executing regression cycles.",
-        "Collaborating with developers to maintain product quality.",
-        "Maintaining and expanding test case repositories.",
-      ],
-    },
-    {
-      title: "Junior QA Engineer",
-      company: "XYZ",
-      subtitle: "Previous Company",
-      period: "2023 - 2024",
-      description: [
-        "Performed functional, regression, and API testing.",
-        "Authored detailed bug reports and contributed to test case repositories.",
-        "Supported release cycles with smoke and sanity testing.",
-      ],
-    },
-    {
-      title: "QA Intern",
-      company: "XYZ",
-      subtitle: "Internship",
-      period: "2022 - 2023",
-      description: [
-        "Learned manual testing fundamentals and test documentation.",
-        "Performed exploratory testing on live web applications.",
-        "Assisted in creating and maintaining test cases.",
-      ],
-    },
+    // {
+    //   title: "SQA Engineer",
+    //   company: "XYZ",
+    //   subtitle: "Current Role - Remote",
+    //   period: "2024 - Present",
+    //   description: [
+    //     "Designing manual and automated test suites and executing regression cycles.",
+    //     "Collaborating with developers to maintain product quality.",
+    //     "Maintaining and expanding test case repositories.",
+    //   ],
+    // },
+    // {
+    //   title: "Junior QA Engineer",
+    //   company: "XYZ",
+    //   subtitle: "Previous Company",
+    //   period: "2023 - 2024",
+    //   description: [
+    //     "Performed functional, regression, and API testing.",
+    //     "Authored detailed bug reports and contributed to test case repositories.",
+    //     "Supported release cycles with smoke and sanity testing.",
+    //   ],
+    // },
+    // {
+    //   title: "QA Intern",
+    //   company: "XYZ",
+    //   subtitle: "Internship",
+    //   period: "2022 - 2023",
+    //   description: [
+    //     "Learned manual testing fundamentals and test documentation.",
+    //     "Performed exploratory testing on live web applications.",
+    //     "Assisted in creating and maintaining test cases.",
+    //   ],
+    // },
     {
       title: "QA Functional testing (Intern)",
       company: "a1qa",
