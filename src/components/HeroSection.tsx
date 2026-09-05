@@ -6,7 +6,7 @@ import RobotVisual from "@/components/RobotVisual";
 
 const CV_DRIVE_LINK = "https://drive.google.com/file/d/1XvACt-fziaUDGew3r4pheeTl2tXWFXyc/view?usp=sharing";
 
-const roles = ["Manual", "Automation"];
+const roles = ["Manual", "Automation", "API", "Performance"];
 
 const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
