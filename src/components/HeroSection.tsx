@@ -13,9 +13,9 @@ const HeroSection = () => {
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const reviewCV = () => {
-    window.open(CV_DRIVE_LINK, "_blank", "noopener,noreferrer");
-  };
+  // const reviewCV = () => {
+  //   window.open(CV_DRIVE_LINK, "_blank", "noopener,noreferrer");
+  // };
 
   useEffect(() => {
     const currentRole = roles[roleIndex];
@@ -92,10 +92,24 @@ const HeroSection = () => {
             transition={{ delay: 0.7, duration: 0.6 }}
             className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
           >
-            <Button variant="glow" size="lg" className="w-44 justify-center" onClick={reviewCV}>
+            {/* <Button variant="glow" size="lg" className="w-44 justify-center" onClick={reviewCV}>
                 <FileText className="w-4 h-4" />
                 Review CV
-            </Button>
+            </Button> */}
+            <a
+  href={CV_DRIVE_LINK}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button
+    variant="glow"
+    size="lg"
+    className="w-44 justify-center"
+  >
+    <FileText className="w-4 h-4" />
+    Review CV
+  </Button>
+</a>
             <Button variant="outline-glow" size="lg" className="w-44 justify-center" onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}>
               <Eye className="w-4 h-4" />
               View Projects
