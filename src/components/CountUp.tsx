@@ -22,13 +22,31 @@ const CountUp = ({
 
   useEffect(() => {
     if (!inView) return;
+
     const startTime = performance.now();
+
     const tick = (now: number) => {
-      const progress = Math.min((now - startTime) / (duration * 1000), 1);
-      const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
-      setCount(Math.round(end * eased));
-      if (progress < 1) requestAnimationFrame(tick);
+      const progress = Math.min(
+        (now - startTime) / (duration * 1000),
+        1
+      );
+
+      const eased = 1 - Math.pow(1 - progress, 3);
+
+      // Keep decimal values when needed
+      const value = end * eased;
+
+      setCount(
+        Number.isInteger(end)
+          ? Math.round(value)
+          : Number(value.toFixed(1))
+      );
+
+      if (progress < 1) {
+        requestAnimationFrame(tick);
+      }
     };
+
     requestAnimationFrame(tick);
   }, [inView, end, duration]);
 

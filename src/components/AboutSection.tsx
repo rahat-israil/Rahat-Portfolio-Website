@@ -4,7 +4,7 @@ import rahatProfile from "@/assets/rahat-profile.png";
 import CountUp from "@/components/CountUp";
 
 const highlights = [
-  { icon: Code2, title: "Test Automation", desc: "Building robust automation frameworks" },
+  { icon: Code2, title: "Manual Testing & Automation", desc: "From detailed manual checks to scalable automated coverage" },
   { icon: Bug, title: "Bug Hunter", desc: "Finding critical issues before users do" },
   { icon: Gauge, title: "Performance", desc: "Ensuring apps run fast and smooth" },
   { icon: Award, title: "Quality First", desc: "Delivering excellence in every release" },
@@ -14,7 +14,7 @@ const stats = [
   { value: 8, suffix: "+", label: "Projects Tested" },
   { value: 320, suffix: "+", label: "Bugs Found & Documented" },
   { value: 4, suffix: "", label: "Certifications Earned" },
-  { value: 4, suffix: "+", label: "Years of Experience" },
+  { value: 0.5, suffix: "+", label: "Years of Experience" },
 ];
 
 const containerVariants = {
@@ -67,13 +67,10 @@ const AboutSection = () => {
               Hi, I'm <span className="text-primary">Rahat Bin Israil</span>
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              A passionate SQA Engineer with expertise in both manual and automation testing.
-              I specialize in building comprehensive test strategies, developing automation frameworks,
-              and ensuring software quality at every stage of the development lifecycle.
+              I’m a detail-oriented SQA Engineer with hands-on experience in manual and functional testing across real-world web and Android applications. I focus on identifying defects, validating functionality, and ensuring a reliable user experience through structured and thorough testing.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              With a keen eye for detail and a love for clean, efficient code, I bridge the gap
-              between development and quality assurance, making sure every product meets the highest standards.
+              I’ve worked with test cases, acceptance testing, regression testing, smoke testing, cross-browser testing, API testing, and defect reporting using Jira. With a foundation in software development and a growing focus on test automation, I bring both a tester’s attention to detail and a developer’s mindset to every product I test.
             </p>
           </motion.div>
         </div>
