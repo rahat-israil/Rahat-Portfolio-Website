@@ -109,7 +109,7 @@ const data: Record<TabKey, TimelineItem[]> = {
       title: "QA Functional testing (Intern)",
       company: "a1qa",
       subtitle: "Internship - Remote",
-      period: "April - 2026 - June - 2026",
+      period: "April - 2026 - June - 2026 | 2.5 Month",
       description: [
         "Tested 6 real-world web and Android applications through end-to-end manual testing.",
         "Reported 240+ defects in Jira, including functional and GUI issues.",
