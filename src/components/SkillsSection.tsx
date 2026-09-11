@@ -24,6 +24,7 @@ const skillLogos: SkillLogo[] = [
   { name: "TestRail", imgUrl: "https://img.icons8.com/color/96/test-tube.png" },
   { name: "Jira", icon: "jira-original" },
   { name: "Postman", icon: "postman-original" },
+  { name: "Bruno", imgUrl: "https://cdn.simpleicons.org/bruno" },
   { name: "JMeter", imgUrl: "https://jmeter.apache.org/images/jmeter_square.svg" },
   { name: "Selenium", icon: "selenium-original" },
   // { name: "Playwright", icon: "playwright-original" },
@@ -52,6 +53,7 @@ const categories: SkillCategory[] = [
     title: "API & Performance",
     skills: [
       { name: "Postman", color: "19 89% 51%", percent: 90 },
+      { name: "Bruno", color: "43 100% 50%", percent: 88 },
       { name: "JMeter", color: "0 70% 50%", percent: 85 },
       { name: "LoadRunner", color: "210 80% 50%", percent: 70 },
     ],
@@ -93,6 +95,7 @@ const skillIconMap: Record<string, { icon?: string; imgUrl?: string }> = {
   "Cypress": { icon: "cypressio-original" },
   "Appium": { imgUrl: "https://img.icons8.com/color/96/appium.png" },
   "Postman": { icon: "postman-original" },
+  "Bruno": {imgUrl: "https://cdn.simpleicons.org/bruno" },
   "JMeter": { imgUrl: "https://jmeter.apache.org/images/jmeter_square.svg" },
   "LoadRunner": { imgUrl: "https://img.icons8.com/color/96/speed.png" },
   "Jira": { icon: "jira-original" },
