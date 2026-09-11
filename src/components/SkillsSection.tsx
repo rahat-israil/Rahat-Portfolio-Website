@@ -26,8 +26,8 @@ const skillLogos: SkillLogo[] = [
   { name: "Postman", icon: "postman-original" },
   { name: "JMeter", imgUrl: "https://jmeter.apache.org/images/jmeter_square.svg" },
   { name: "Selenium", icon: "selenium-original" },
-  { name: "Playwright", icon: "playwright-original" },
-  { name: "Cypress", icon: "cypressio-original" },
+  // { name: "Playwright", icon: "playwright-original" },
+  // { name: "Cypress", icon: "cypressio-original" },
   { name: "WebDriverIO", imgUrl: "https://avatars.githubusercontent.com/u/6512473?s=200&v=4" },
   { name: "MySQL", icon: "mysql-original" },
   { name: "MongoDB", icon: "mongodb-original" },
@@ -43,26 +43,26 @@ const categories: SkillCategory[] = [
   {
     title: "Testing Tools",
     skills: [
-      { name: "Selenium", color: "43 100% 50%", percent: 90 },
-      { name: "Playwright", color: "142 71% 45%", percent: 85 },
-      { name: "Cypress", color: "160 50% 40%", percent: 80 },
+      { name: "Selenium", color: "43 100% 50%", percent: 80 },
+      // { name: "Playwright", color: "142 71% 45%", percent: 85 },
+      // { name: "Cypress", color: "160 50% 40%", percent: 80 },
     ],
   },
   {
     title: "API & Performance",
     skills: [
-      { name: "Postman", color: "19 89% 51%", percent: 92 },
-      { name: "JMeter", color: "0 70% 50%", percent: 80 },
+      { name: "Postman", color: "19 89% 51%", percent: 90 },
+      { name: "JMeter", color: "0 70% 50%", percent: 85 },
       { name: "LoadRunner", color: "210 80% 50%", percent: 70 },
     ],
   },
   {
     title: "Project Management",
     skills: [
-      { name: "Jira", color: "213 80% 50%", percent: 88 },
-      { name: "TestRail", color: "142 50% 45%", percent: 82 },
-      { name: "Excel", color: "142 71% 35%", percent: 85 },
-      { name: "GitHub", color: "0 0% 40%", percent: 85 },
+      { name: "Jira", color: "213 80% 50%", percent: 92 },
+      { name: "TestRail", color: "142 50% 45%", percent: 85 },
+      { name: "Excel", color: "142 71% 35%", percent: 90 },
+      { name: "GitHub", color: "0 0% 40%", percent: 88 },
     ],
   },
   {
@@ -72,7 +72,7 @@ const categories: SkillCategory[] = [
       { name: "CSS", color: "210 80% 50%", percent: 85 },
       { name: "Tailwind CSS", color: "190 90% 50%", percent: 88 },
       { name: "JavaScript", color: "50 90% 50%", percent: 82 },
-      { name: "React", color: "195 90% 55%", percent: 80 },
+      { name: "React", color: "195 90% 55%", percent: 65 },
     ],
   },
 ];
