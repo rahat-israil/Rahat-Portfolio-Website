@@ -32,8 +32,8 @@ const Footer = () => {
               <img src={logoImg} alt="Logo" className="w-8 h-8 object-contain" />
               <span className="text-2xl font-bold font-mono tracking-tight text-foreground">Rahat</span>
             </button>
-            <p className="text-muted-foreground text-sm leading-relaxed max-w-xs text-justify">
-              Aspiring SQA Engineer focused on <span className="text-primary font-semibold">Manual</span> and <span className="text-primary font-semibold">Automation</span> testing, passionate about improving software quality through identifying defects and continuously learning modern testing practices.
+            <p className="text-muted-foreground text-sm leading-relaxed max-w-xs text-justify w-[300px] md:w-[300px] lg:w-[299px]">
+              SQA Engineer with hands-on experience in <span className="text-primary font-semibold">Manual</span> and growing expertise in <span className="text-primary font-semibold">Automation</span> testing, dedicated to delivering high-quality, bug-free software.
             </p>
           </div>
 
