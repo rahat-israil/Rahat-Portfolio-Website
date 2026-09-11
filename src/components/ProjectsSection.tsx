@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { ClipboardList, Bot } from "lucide-react";
 import { FileText, Github, Eye, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -34,6 +35,7 @@ interface Project {
   links?: ProjectLink[];
   repo?: string;
   details: ProjectDetails;
+  category: "Manual" | "Automation";
 }
 
 const projects: Project[] = [
@@ -55,6 +57,7 @@ const projects: Project[] = [
       { label: "Bug Reports", url: "#" },
     ],
     repo: "#",
+    category: "Manual",
     details: {
       intro:
         "Complete testing lifecycle across two versions of a food ordering web application. Validated bug fixes, tested new features, and ensured no regression.",
@@ -98,6 +101,7 @@ const projects: Project[] = [
       { label: "Acceptance Sheet", url: "#" },
     ],
     repo: "#",
+    category: "Manual",
     details: {
       intro:
         "Performed end-to-end functional testing of Greg.Olsen.PhotoStudio, a web-based photography studio management application.",
@@ -129,6 +133,7 @@ const projects: Project[] = [
       { label: "Bug Reports", url: "#" },
     ],
     repo: "#",
+    category: "Manual",
     details: {
       intro:
         "Performed functional QA testing of FlutterQuiz, a Flutter-based Android quiz application.",
@@ -164,6 +169,7 @@ const projects: Project[] = [
       { label: "Test Survey", url: "#" },
     ],
     repo: "#",
+    category: "Manual",
     details: {
       intro:
         "Performed functional, logical, and UI testing of the Calculator Menu module within a Supershop billing and ordering web application.",
@@ -196,6 +202,7 @@ const projects: Project[] = [
       { label: "Test Survey", url: "#" },
     ],
     repo: "#",
+    category: "Manual",
     details: {
       intro:
         "Performed functional QA testing of a Voicemail Android application that allows users to record and store a custom voice message, automatically played to callers when an incoming call goes unanswered.",
@@ -231,6 +238,7 @@ const projects: Project[] = [
       { label: "Quality Report", url: "#" },
     ],
     repo: "#",
+    category: "Manual",
     details: {
       intro:
         "Performed functional QA testing of Forkify, a recipe search and discovery web application.",
@@ -261,6 +269,7 @@ const projects: Project[] = [
       "Responsive Testing",
     ],
     repo: "#",
+    category: "Manual",
     details: {
       intro:
         "Performed end-to-end manual testing of a full-stack tourism web application built with Node.js, Express.js, and MongoDB.",
@@ -291,6 +300,7 @@ const projects: Project[] = [
       "UI/UX Validation",
     ],
     repo: "#",
+    category: "Manual",
     details: {
       intro:
         "Performed end-to-end manual testing of a full-featured healthcare platform developed with Java and Firebase.",
@@ -309,18 +319,179 @@ const projects: Project[] = [
         "Identified and helped resolve critical appointment and payment-related defects, ensuring reliable real-time synchronization across 8 core modules.",
     },
   },
+  // ---------------- Automation Example Projects ----------------
+  {
+    title: "ShopFlow — E-Commerce API Automation (REST Assured)",
+    desc: "End-to-end REST API automation framework for an e-commerce platform. 120+ automated test cases covering auth, cart, checkout & order management with CI integration.",
+    tags: [
+      "REST Assured",
+      "Java",
+      "TestNG",
+      "API Automation",
+      "CI/CD (Jenkins)",
+      "Allure Reports",
+    ],
+    links: [
+      { label: "Automation Report", url: "#" },
+      { label: "Test Cases", url: "#" },
+    ],
+    repo: "#",
+    category: "Automation",
+    details: {
+      intro:
+        "Designed and built a scalable REST API automation framework for ShopFlow, an e-commerce platform, using REST Assured, Java, and TestNG. The framework validates all core API endpoints and runs on every CI build.",
+      sections: [
+        {
+          heading: "Framework Highlights",
+          bullets: [
+            "Developed 120+ automated API test cases covering authentication, product catalog, cart management, checkout, and order tracking endpoints",
+            "Implemented data-driven testing using Excel and JSON feeds to validate positive, negative, and edge-case scenarios",
+            "Integrated the framework with Jenkins CI pipeline — tests run automatically on every pull request and nightly build",
+            "Generated rich Allure reports with request/response logs, assertions, and screenshots of failures for fast triage",
+            "Built reusable utility libraries for token handling, request payload generation, and response validation",
+          ],
+        },
+        {
+          heading: "Coverage Areas",
+          bullets: [
+            "Authentication & authorization — valid/invalid tokens, role-based access, session expiry",
+            "Cart & checkout — add/remove items, quantity updates, coupon application, payment validation",
+            "Order management — order creation, status transitions, cancellation, and refund flows",
+          ],
+        },
+      ],
+      result:
+        "Achieved 95% API test coverage across 40+ endpoints, reducing regression cycle time from 2 days to under 30 minutes, with zero critical defects escaping to production.",
+    },
+  },
+  {
+    title: "CloudBank — Web UI Automation (Playwright)",
+    desc: "Cross-browser web UI automation suite for a banking dashboard. 80+ automated tests with Page Object Model, visual regression & parallel execution.",
+    tags: [
+      "Playwright",
+      "TypeScript",
+      "Page Object Model",
+      "Cross-Browser",
+      "Visual Regression",
+      "GitHub Actions",
+    ],
+    links: [
+      { label: "Automation Report", url: "#" },
+      { label: "Test Suites", url: "#" },
+    ],
+    repo: "#",
+    category: "Automation",
+    details: {
+      intro:
+        "Built a robust cross-browser UI automation framework for CloudBank, an online banking web application, using Playwright and TypeScript with the Page Object Model design pattern.",
+      sections: [
+        {
+          heading: "Framework Highlights",
+          bullets: [
+            "Developed 80+ automated UI test cases covering login, account overview, fund transfer, statement download, and beneficiary management flows",
+            "Implemented the Page Object Model for maintainable, reusable page components and selectors",
+            "Executed tests in parallel across Chromium, Firefox, and WebKit browsers for full cross-browser coverage",
+            "Integrated visual regression testing to catch unintended UI changes across releases",
+            "Configured GitHub Actions CI pipeline with auto-trigger on push and scheduled nightly runs",
+            "Generated HTML and Allure reports with trace viewer for debugging failures",
+          ],
+        },
+        {
+          heading: "Coverage Areas",
+          bullets: [
+            "Authentication — login, logout, session timeout, multi-factor validation",
+            "Transactions — fund transfer, schedule payment, recurring transfer, transaction history",
+            "Account management — profile update, beneficiary CRUD, statement generation",
+          ],
+        },
+      ],
+      result:
+        "Reduced manual regression effort by 70%, achieved 90% UI test coverage, and caught 15+ visual regressions before release across three browsers.",
+    },
+  },
+  {
+    title: "FitTrack — Mobile App Automation (Appium)",
+    desc: "Mobile automation framework for an Android & iOS fitness app. 60+ automated tests covering onboarding, workout tracking & sync with cloud devices.",
+    tags: [
+      "Appium",
+      "Java",
+      "TestNG",
+      "Android & iOS",
+      "Page Object Model",
+      "BrowserStack",
+    ],
+    links: [
+      { label: "Automation Report", url: "#" },
+      { label: "Test Plan", url: "#" },
+    ],
+    repo: "#",
+    category: "Automation",
+    details: {
+      intro:
+        "Created a mobile test automation framework for FitTrack, a cross-platform fitness application, using Appium, Java, and TestNG, with cloud execution via BrowserStack.",
+      sections: [
+        {
+          heading: "Framework Highlights",
+          bullets: [
+            "Developed 60+ automated test cases covering onboarding, profile setup, workout logging, progress tracking, and device sync flows",
+            "Designed reusable Page Object components for shared screens across Android and iOS",
+            "Executed tests on real devices via BrowserStack cloud for broad device coverage",
+            "Handled dynamic elements, app restarts, and network condition simulations (Wi-Fi, 4G, offline)",
+            "Integrated with CI to run smoke suites on every build and full regression nightly",
+            "Generated consolidated reports with screenshots, video logs, and device-level execution details",
+          ],
+        },
+        {
+          heading: "Coverage Areas",
+          bullets: [
+            "Onboarding — sign-up, login, permission grants, tutorial flow",
+            "Workout tracking — start/pause/stop session, log exercise, view history",
+            "Sync — cloud sync, conflict resolution, offline-to-online data reconciliation",
+          ],
+        },
+      ],
+      result:
+        "Achieved 85% test coverage across 25+ device profiles, cut regression time by 65%, and improved release confidence for bi-weekly production deployments.",
+    },
+  },
 ];
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0, 0, 0.2, 1] as const } },
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08, delayChildren: 0.05 } },
 };
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30, scale: 0.96 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] as const },
+  },
+  exit: {
+    opacity: 0,
+    y: -20,
+    scale: 0.96,
+    transition: { duration: 0.3, ease: [0.4, 0, 1, 1] as const },
+  },
+};
+
+const hoverSpring = { type: "spring" as const, stiffness: 300, damping: 20 };
 
 const INITIAL_COUNT = 6;
 const LOAD_STEP = 3;
 
+const CATEGORIES = ["Manual", "Automation"] as const;
+
+const categoryTabs: { key: (typeof CATEGORIES)[number]; label: string; icon: typeof ClipboardList }[] = [
+  { key: "Manual", label: "Manual", icon: ClipboardList },
+  { key: "Automation", label: "Automation", icon: Bot },
+];
+
 const ProjectsSection = () => {
   const [active, setActive] = useState<Project | null>(null);
+  const [category, setCategory] = useState<(typeof CATEGORIES)[number]>("Manual");
   const [visibleCount, setVisibleCount] = useState(INITIAL_COUNT);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -331,8 +502,14 @@ const ProjectsSection = () => {
     });
   };
 
-  const visibleProjects = projects.slice(0, visibleCount);
-  const hasMore = visibleCount < projects.length;
+  const handleCategoryChange = (cat: (typeof CATEGORIES)[number]) => {
+    setCategory(cat);
+    setVisibleCount(INITIAL_COUNT);
+  };
+
+  const filteredProjects = projects.filter((p) => p.category === category);
+  const visibleProjects = filteredProjects.slice(0, visibleCount);
+  const hasMore = visibleCount < filteredProjects.length;
 
   return (
     <section id="projects" ref={sectionRef} className="section-padding bg-card/50">
@@ -342,72 +519,102 @@ const ProjectsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <p className="text-primary font-mono text-sm mb-2 tracking-widest uppercase">My work</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Projects</h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {visibleProjects.map((project, index) => (
-            <motion.div
-              key={project.title}
-              variants={cardVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
-              transition={{ delay: (index % 3) * 0.08 }}
-              whileHover={{ y: -8 }}
-              className="bg-card border border-border rounded-xl overflow-hidden glow-border transition-all duration-300 flex flex-col"
-            >
-              <div className="p-4 pb-0">
-                <div className="rounded-xl overflow-hidden">
-                  <img src={projectImage} alt={project.title} className="w-full h-44 object-fill" />
-                </div>
-              </div>
-              <div className="p-4 flex flex-col flex-1">
-              <h3 className="text-lg font-semibold text-foreground mb-3">
-                {project.title}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-1">{project.desc}</p>
-              <div className="flex flex-wrap gap-2 mb-5">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-xs font-mono px-2.5 py-1 rounded-md bg-primary/10 text-primary"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-              <div className="flex flex-col md:flex-col lg:flex-row gap-3">
-                <Button asChild variant="glow" size="sm" className="w-full">
-                  <a href={project.repo ?? "#"} target="_blank" rel="noopener noreferrer">
-                    <Github className="w-3.5 h-3.5" />
-                    GitHub
-                  </a>
-                </Button>
-                <Button
-                  variant="outline-glow"
-                  size="sm"
-                  className="w-full"
-                  onClick={() => setActive(project)}
-                >
-                  <Eye className="w-3.5 h-3.5" />
-                  View Details
-                </Button>
-              </div>
-              </div>
-            </motion.div>
-          ))}
+        {/* Category tabs */}
+        <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-16">
+          {categoryTabs.map((tab) => {
+            const isActive = category === tab.key;
+            const Icon = tab.icon;
+            return (
+              <button
+                key={tab.key}
+                onClick={() => handleCategoryChange(tab.key)}
+                className={`flex items-center gap-2 px-5 md:px-6 py-2.5 rounded-full border transition-all duration-300 font-medium text-sm md:text-base ${
+                  isActive
+                    ? "bg-primary text-primary-foreground border-primary shadow-[0_0_20px_hsl(var(--primary)/0.5)]"
+                    : "bg-card text-foreground border-border hover:border-primary/50 hover:text-primary"
+                }`}
+              >
+                <Icon className="w-4 h-4" />
+                {tab.label}
+              </button>
+            );
+          })}
         </div>
+
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <AnimatePresence mode="popLayout">
+            {visibleProjects.map((project) => (
+              <motion.div
+                key={project.title}
+                layout
+                variants={cardVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.1 }}
+                exit="exit"
+                whileHover={{ y: -8, transition: hoverSpring }}
+                className="bg-card border border-border rounded-xl overflow-hidden glow-border transition-all duration-300 flex flex-col"
+              >
+                <div className="p-4 pb-0">
+                  <div className="rounded-xl overflow-hidden">
+                    <img src={projectImage} alt={project.title} className="w-full h-44 object-fill" />
+                  </div>
+                </div>
+                <div className="p-4 flex flex-col flex-1">
+                <h3 className="text-lg font-semibold text-foreground mb-3">
+                  {project.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-1">{project.desc}</p>
+                <div className="flex flex-wrap gap-2 mb-5">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs font-mono px-2.5 py-1 rounded-md bg-primary/10 text-primary"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex flex-col md:flex-col lg:flex-row gap-3">
+                  <Button asChild variant="glow" size="sm" className="w-full">
+                    <a href={project.repo ?? "#"} target="_blank" rel="noopener noreferrer">
+                      <Github className="w-3.5 h-3.5" />
+                      GitHub
+                    </a>
+                  </Button>
+                  <Button
+                    variant="outline-glow"
+                    size="sm"
+                    className="w-full"
+                    onClick={() => setActive(project)}
+                  >
+                    <Eye className="w-3.5 h-3.5" />
+                    View Details
+                  </Button>
+                </div>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </motion.div>
 
         <div className="flex justify-center mt-12">
           {hasMore ? (
             <Button
               variant="outline-glow"
               size="lg"
-              onClick={() => setVisibleCount((c) => Math.min(c + LOAD_STEP, projects.length))}
+              onClick={() => setVisibleCount((c) => Math.min(c + LOAD_STEP, filteredProjects.length))}
             >
               Show More
             </Button>
