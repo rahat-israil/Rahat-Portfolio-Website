@@ -1,4 +1,5 @@
 import { Github, Linkedin, Twitter, Heart, Facebook, Mail, Phone, MapPin } from "lucide-react";
+import { FaReddit } from "react-icons/fa";
 import logoImg from "@/assets/Logo.png";
 
 const footerLinks = [
@@ -13,7 +14,7 @@ const footerLinks = [
 const socialLinks = [
   { icon: Github, href: "https://github.com/rahat-israil", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/rahat-israil/", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: FaReddit, href: "https://www.reddit.com/user/rahat_israil", label: "Reddit" },
   { icon: Facebook, href: "https://www.facebook.com/rahat.bin.israil.2025", label: "Facebook" },
 ];
 
