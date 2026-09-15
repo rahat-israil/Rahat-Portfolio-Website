@@ -9,7 +9,17 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import BurgerShopImg from "@/assets/projects/BurgerShop.png";
+import PhotoStudioImg from "@/assets/projects/PhotoStudio.png";
+import FlutterQuizImg from "@/assets/projects/FlutterQuiz.jpg";
+import CalculatorMenuImg from "@/assets/projects/CalculatorMenu.png";
+import VoicemailImg from "@/assets/projects/Voicemail.png";
+import ForkifyImg from "@/assets/projects/Forkify.png";
+import BDTripImg from "@/assets/projects/BDTrip.png";
+import HealthCareImg from "@/assets/projects/HealthCare.png";
 import projectImage from "@/assets/project-image.png";
+import Automation1Img from "@/assets/projects/Automation1.jpg";
+import Automation2Img from "@/assets/projects/AUtomation.jpg";
 
 interface ProjectLink {
   label: string;
@@ -36,11 +46,14 @@ interface Project {
   repo?: string;
   details: ProjectDetails;
   category: "Manual" | "Automation";
+  image?: string;
+  mobile?: boolean;
 }
 
 const projects: Project[] = [
+  // Project 1
   {
-    title: "BurgerShop — Web Application Testing (v1.0 & v2.0)",
+    title: "BurgerShop - Web Application Testing (v1.0 & v2.0)",
     desc: "Complete testing lifecycle across two versions of a food ordering web app. 61 bugs found in v1.0, 9 more in v2.0 with full regression & defect validation.",
     tags: [
       "Manual Testing",
@@ -58,6 +71,7 @@ const projects: Project[] = [
     ],
     repo: "#",
     category: "Manual",
+    image: BurgerShopImg,
     details: {
       intro:
         "Complete testing lifecycle across two versions of a food ordering web application. Validated bug fixes, tested new features, and ensured no regression.",
@@ -84,8 +98,10 @@ const projects: Project[] = [
         "Detected and documented 100% of critical bugs across both versions, achieving a 94% overall bug finding ratio, with all v1.0 defects successfully validated as fixed in v2.0.",
     },
   },
+
+   // Project 2
   {
-    title: "Greg.Olsen.PhotoStudio — Web Application Testing",
+    title: "Greg.Olsen.PhotoStudio - Web Application Testing",
     desc: "End-to-end functional testing of a photography studio management app. 55 defects found, 90% bug finding ratio.",
     tags: [
       "Manual Testing",
@@ -102,6 +118,7 @@ const projects: Project[] = [
     ],
     repo: "#",
     category: "Manual",
+    image: PhotoStudioImg,
     details: {
       intro:
         "Performed end-to-end functional testing of Greg.Olsen.PhotoStudio, a web-based photography studio management application.",
@@ -119,8 +136,10 @@ const projects: Project[] = [
         "Detected and documented 100% of critical bugs before release, achieving a 90% overall bug finding ratio, ensuring full functional and cross-browser reliability.",
     },
   },
+
+   // Project 3
   {
-    title: "FlutterQuiz — Android Application Testing",
+    title: "FlutterQuiz - Android Application Testing",
     desc: "Functional QA of a Flutter-based Android quiz app. 44 defects found, with device logs attached for every functional bug.",
     tags: [
       "Android Studio",
@@ -134,6 +153,8 @@ const projects: Project[] = [
     ],
     repo: "#",
     category: "Manual",
+    image: FlutterQuizImg,
+    mobile: true,
     details: {
       intro:
         "Performed functional QA testing of FlutterQuiz, a Flutter-based Android quiz application.",
@@ -153,8 +174,10 @@ const projects: Project[] = [
         "Detected and documented 100% of critical bugs, achieving an 80% overall bug finding ratio, with full log-based reproduction evidence provided for every functional defect.",
     },
   },
+
+   // Project 4
   {
-    title: "Calculator Menu — Web Application Testing",
+    title: "Calculator Menu - Web Application Testing",
     desc: "Functional & logical testing of a Supershop billing module. 30 bugs found in calculation, discount & tax logic.",
     tags: [
       "Manual Testing",
@@ -170,6 +193,7 @@ const projects: Project[] = [
     ],
     repo: "#",
     category: "Manual",
+    image: CalculatorMenuImg,
     details: {
       intro:
         "Performed functional, logical, and UI testing of the Calculator Menu module within a Supershop billing and ordering web application.",
@@ -187,8 +211,10 @@ const projects: Project[] = [
         "Detected and documented 100% of calculation-related critical bugs, achieving a 90% overall bug finding ratio and ensuring system compliance with financial accuracy standards.",
     },
   },
+
+   // Project 5
   {
-    title: "Voicemail — Android Application Testing",
+    title: "Voicemail - Android Application Testing",
     desc: "QA testing of voice recording & playback app. 25 defects found across recording, playback, and toggle features.",
     tags: [
       "Manual Testing",
@@ -203,6 +229,8 @@ const projects: Project[] = [
     ],
     repo: "#",
     category: "Manual",
+    image: VoicemailImg,
+    mobile: true,
     details: {
       intro:
         "Performed functional QA testing of a Voicemail Android application that allows users to record and store a custom voice message, automatically played to callers when an incoming call goes unanswered.",
@@ -223,8 +251,10 @@ const projects: Project[] = [
         "Detected and documented 100% of critical playback/recording failures, achieving a 87% overall bug finding ratio, ensuring reliable voicemail functionality across devices.",
     },
   },
+
+   // Project 6
   {
-    title: "Forkify — Web Application Testing",
+    title: "Forkify - Web Application Testing",
     desc: "Functional testing of a recipe discovery web app. 20 bugs found, with BVA applied on serving/quantity scaling.",
     tags: [
       "Manual Testing",
@@ -239,6 +269,7 @@ const projects: Project[] = [
     ],
     repo: "#",
     category: "Manual",
+    image: ForkifyImg,
     details: {
       intro:
         "Performed functional QA testing of Forkify, a recipe search and discovery web application.",
@@ -257,8 +288,10 @@ const projects: Project[] = [
         "Detected and documented 100% of critical bugs, achieving a 73% overall bug finding ratio, ensuring reliable core functionality before release.",
     },
   },
+
+   // Project 7
   {
-    title: "BDTrip — Tourism Web Application Testing",
+    title: "BDTrip - Tourism Web Application Testing",
     desc: "End-to-end manual testing of a full-stack tourism platform (Node.js, Express.js, MongoDB) across 6 core modules: Auth, Destination Management, Booking, Admin Dashboard, and more. 42+ defects found, including session management and booking sync issues.",
     tags: [
       "Manual Testing",
@@ -270,6 +303,7 @@ const projects: Project[] = [
     ],
     repo: "#",
     category: "Manual",
+    image: BDTripImg,
     details: {
       intro:
         "Performed end-to-end manual testing of a full-stack tourism web application built with Node.js, Express.js, and MongoDB.",
@@ -289,8 +323,10 @@ const projects: Project[] = [
         "Ensured stable, secure performance across 6 core modules, with all critical synchronization and validation issues identified before submission.",
     },
   },
+
+   // Project 8
   {
-    title: "Health Care Application — Android Application Testing",
+    title: "Health Care Application - Android Application Testing",
     desc: "End-to-end manual testing of a full-featured healthcare platform (Java, Firebase) across 8 modules: Lab Booking, Medicine Ordering, Doctor Appointments, Order Tracking, and more. 34+ defects found, including critical appointment sync and payment gateway bugs.",
     tags: [
       "Manual Testing",
@@ -301,6 +337,8 @@ const projects: Project[] = [
     ],
     repo: "#",
     category: "Manual",
+    image: HealthCareImg,
+    mobile: true,
     details: {
       intro:
         "Performed end-to-end manual testing of a full-featured healthcare platform developed with Java and Firebase.",
@@ -319,9 +357,13 @@ const projects: Project[] = [
         "Identified and helped resolve critical appointment and payment-related defects, ensuring reliable real-time synchronization across 8 core modules.",
     },
   },
+
+
   // ---------------- Automation Example Projects ----------------
+
+   // Project 1
   {
-    title: "ShopFlow — E-Commerce API Automation (REST Assured)",
+    title: "ShopFlow - E-Commerce API Automation",
     desc: "End-to-end REST API automation framework for an e-commerce platform. 120+ automated test cases covering auth, cart, checkout & order management with CI integration.",
     tags: [
       "REST Assured",
@@ -337,9 +379,8 @@ const projects: Project[] = [
     ],
     repo: "#",
     category: "Automation",
+    image: Automation1Img,
     details: {
-      intro:
-        "Designed and built a scalable REST API automation framework for ShopFlow, an e-commerce platform, using REST Assured, Java, and TestNG. The framework validates all core API endpoints and runs on every CI build.",
       sections: [
         {
           heading: "Framework Highlights",
@@ -364,96 +405,102 @@ const projects: Project[] = [
         "Achieved 95% API test coverage across 40+ endpoints, reducing regression cycle time from 2 days to under 30 minutes, with zero critical defects escaping to production.",
     },
   },
-  {
-    title: "CloudBank — Web UI Automation (Playwright)",
-    desc: "Cross-browser web UI automation suite for a banking dashboard. 80+ automated tests with Page Object Model, visual regression & parallel execution.",
-    tags: [
-      "Playwright",
-      "TypeScript",
-      "Page Object Model",
-      "Cross-Browser",
-      "Visual Regression",
-      "GitHub Actions",
-    ],
-    links: [
-      { label: "Automation Report", url: "#" },
-      { label: "Test Suites", url: "#" },
-    ],
-    repo: "#",
-    category: "Automation",
-    details: {
-      intro:
-        "Built a robust cross-browser UI automation framework for CloudBank, an online banking web application, using Playwright and TypeScript with the Page Object Model design pattern.",
-      sections: [
-        {
-          heading: "Framework Highlights",
-          bullets: [
-            "Developed 80+ automated UI test cases covering login, account overview, fund transfer, statement download, and beneficiary management flows",
-            "Implemented the Page Object Model for maintainable, reusable page components and selectors",
-            "Executed tests in parallel across Chromium, Firefox, and WebKit browsers for full cross-browser coverage",
-            "Integrated visual regression testing to catch unintended UI changes across releases",
-            "Configured GitHub Actions CI pipeline with auto-trigger on push and scheduled nightly runs",
-            "Generated HTML and Allure reports with trace viewer for debugging failures",
-          ],
-        },
-        {
-          heading: "Coverage Areas",
-          bullets: [
-            "Authentication — login, logout, session timeout, multi-factor validation",
-            "Transactions — fund transfer, schedule payment, recurring transfer, transaction history",
-            "Account management — profile update, beneficiary CRUD, statement generation",
-          ],
-        },
-      ],
-      result:
-        "Reduced manual regression effort by 70%, achieved 90% UI test coverage, and caught 15+ visual regressions before release across three browsers.",
-    },
-  },
-  {
-    title: "FitTrack — Mobile App Automation (Appium)",
-    desc: "Mobile automation framework for an Android & iOS fitness app. 60+ automated tests covering onboarding, workout tracking & sync with cloud devices.",
-    tags: [
-      "Appium",
-      "Java",
-      "TestNG",
-      "Android & iOS",
-      "Page Object Model",
-      "BrowserStack",
-    ],
-    links: [
-      { label: "Automation Report", url: "#" },
-      { label: "Test Plan", url: "#" },
-    ],
-    repo: "#",
-    category: "Automation",
-    details: {
-      intro:
-        "Created a mobile test automation framework for FitTrack, a cross-platform fitness application, using Appium, Java, and TestNG, with cloud execution via BrowserStack.",
-      sections: [
-        {
-          heading: "Framework Highlights",
-          bullets: [
-            "Developed 60+ automated test cases covering onboarding, profile setup, workout logging, progress tracking, and device sync flows",
-            "Designed reusable Page Object components for shared screens across Android and iOS",
-            "Executed tests on real devices via BrowserStack cloud for broad device coverage",
-            "Handled dynamic elements, app restarts, and network condition simulations (Wi-Fi, 4G, offline)",
-            "Integrated with CI to run smoke suites on every build and full regression nightly",
-            "Generated consolidated reports with screenshots, video logs, and device-level execution details",
-          ],
-        },
-        {
-          heading: "Coverage Areas",
-          bullets: [
-            "Onboarding — sign-up, login, permission grants, tutorial flow",
-            "Workout tracking — start/pause/stop session, log exercise, view history",
-            "Sync — cloud sync, conflict resolution, offline-to-online data reconciliation",
-          ],
-        },
-      ],
-      result:
-        "Achieved 85% test coverage across 25+ device profiles, cut regression time by 65%, and improved release confidence for bi-weekly production deployments.",
-    },
-  },
+
+   // Project 2
+  // {
+  //   title: "CloudBank — Web UI Automation (Playwright)",
+  //   desc: "Cross-browser web UI automation suite for a banking dashboard. 80+ automated tests with Page Object Model, visual regression & parallel execution.",
+  //   tags: [
+  //     "Playwright",
+  //     "TypeScript",
+  //     "Page Object Model",
+  //     "Cross-Browser",
+  //     "Visual Regression",
+  //     "GitHub Actions",
+  //   ],
+  //   links: [
+  //     { label: "Automation Report", url: "#" },
+  //     { label: "Test Suites", url: "#" },
+  //   ],
+  //   repo: "#",
+  //   category: "Automation",
+  //   image: Automation2Img,
+  //   details: {
+  //     intro:
+  //       "Built a robust cross-browser UI automation framework for CloudBank, an online banking web application, using Playwright and TypeScript with the Page Object Model design pattern.",
+  //     sections: [
+  //       {
+  //         heading: "Framework Highlights",
+  //         bullets: [
+  //           "Developed 80+ automated UI test cases covering login, account overview, fund transfer, statement download, and beneficiary management flows",
+  //           "Implemented the Page Object Model for maintainable, reusable page components and selectors",
+  //           "Executed tests in parallel across Chromium, Firefox, and WebKit browsers for full cross-browser coverage",
+  //           "Integrated visual regression testing to catch unintended UI changes across releases",
+  //           "Configured GitHub Actions CI pipeline with auto-trigger on push and scheduled nightly runs",
+  //           "Generated HTML and Allure reports with trace viewer for debugging failures",
+  //         ],
+  //       },
+  //       {
+  //         heading: "Coverage Areas",
+  //         bullets: [
+  //           "Authentication — login, logout, session timeout, multi-factor validation",
+  //           "Transactions — fund transfer, schedule payment, recurring transfer, transaction history",
+  //           "Account management — profile update, beneficiary CRUD, statement generation",
+  //         ],
+  //       },
+  //     ],
+  //     result:
+  //       "Reduced manual regression effort by 70%, achieved 90% UI test coverage, and caught 15+ visual regressions before release across three browsers.",
+  //   },
+  // },
+
+  //  // Project 3
+  // {
+  //   title: "FitTrack — Mobile App Automation (Appium)",
+  //   desc: "Mobile automation framework for an Android & iOS fitness app. 60+ automated tests covering onboarding, workout tracking & sync with cloud devices.",
+  //   tags: [
+  //     "Appium",
+  //     "Java",
+  //     "TestNG",
+  //     "Android & iOS",
+  //     "Page Object Model",
+  //     "BrowserStack",
+  //   ],
+  //   links: [
+  //     { label: "Automation Report", url: "#" },
+  //     { label: "Test Plan", url: "#" },
+  //   ],
+  //   repo: "#",
+  //   category: "Automation",
+  //   image: Automation1Img,
+  //   details: {
+  //     intro:
+  //       "Created a mobile test automation framework for FitTrack, a cross-platform fitness application, using Appium, Java, and TestNG, with cloud execution via BrowserStack.",
+  //     sections: [
+  //       {
+  //         heading: "Framework Highlights",
+  //         bullets: [
+  //           "Developed 60+ automated test cases covering onboarding, profile setup, workout logging, progress tracking, and device sync flows",
+  //           "Designed reusable Page Object components for shared screens across Android and iOS",
+  //           "Executed tests on real devices via BrowserStack cloud for broad device coverage",
+  //           "Handled dynamic elements, app restarts, and network condition simulations (Wi-Fi, 4G, offline)",
+  //           "Integrated with CI to run smoke suites on every build and full regression nightly",
+  //           "Generated consolidated reports with screenshots, video logs, and device-level execution details",
+  //         ],
+  //       },
+  //       {
+  //         heading: "Coverage Areas",
+  //         bullets: [
+  //           "Onboarding — sign-up, login, permission grants, tutorial flow",
+  //           "Workout tracking — start/pause/stop session, log exercise, view history",
+  //           "Sync — cloud sync, conflict resolution, offline-to-online data reconciliation",
+  //         ],
+  //       },
+  //     ],
+  //     result:
+  //       "Achieved 85% test coverage across 25+ device profiles, cut regression time by 65%, and improved release confidence for bi-weekly production deployments.",
+  //   },
+  // },
 ];
 
 const containerVariants = {
@@ -567,8 +614,12 @@ const ProjectsSection = () => {
                 className="bg-card border border-border rounded-xl overflow-hidden glow-border transition-all duration-300 flex flex-col"
               >
                 <div className="p-4 pb-0">
-                  <div className="rounded-xl overflow-hidden">
-                    <img src={projectImage} alt={project.title} className="w-full h-44 object-fill" />
+                  <div className="aspect-video w-full rounded-xl overflow-hidden flex justify-center items-center bg-muted">
+                    <img
+                      src={project.image ?? projectImage}
+                      alt={project.title}
+                      className="w-full h-full object-contain rounded-xl"
+                    />
                   </div>
                 </div>
                 <div className="p-4 flex flex-col flex-1">
@@ -640,8 +691,14 @@ const ProjectsSection = () => {
                 </DialogTitle>
               </DialogHeader>
 
-              <div className="rounded-xl overflow-hidden">
-                <img src={projectImage} alt={active.title} className="w-full h-52 object-fill" />
+               <div className="flex justify-center">
+                 <div className="w-full max-w-2xl rounded-xl overflow-hidden flex justify-center items-center bg-muted border border-border max-h-[400px] sm:max-h-[480px]">
+                    <img
+                      src={active.image ?? projectImage}
+                      alt={active.title}
+                      className="w-full h-full object-contain"
+                    />
+                </div>
               </div>
 
               {/* Full description */}
