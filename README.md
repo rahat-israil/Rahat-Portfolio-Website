@@ -1,7 +1,5 @@
 # Rahat's Portfolio
 
-A modern, animated personal portfolio website for **Rahat Bin Israil — SQA Engineer**.
-
 A modern, responsive, and interactive personal portfolio website showcasing my experience, testing expertise, projects, certifications, and technical skills as an SQA Engineer.
 
 Built with **React, TypeScript, Tailwind CSS, GSAP, and Framer Motion**, the portfolio combines a clean UI with smooth animations, interactive components, and a dark/light theme system.
