@@ -69,7 +69,7 @@ const projects: Project[] = [
       { label: "Quality Report", url: "#" },
       { label: "Bug Reports", url: "#" },
     ],
-    repo: "#",
+    repo: "https://github.com/rahat-israil/Web-Application-Testing-05",
     category: "Manual",
     image: BurgerShopImg,
     details: {
@@ -116,7 +116,7 @@ const projects: Project[] = [
       { label: "Bug Reports", url: "#" },
       { label: "Acceptance Sheet", url: "#" },
     ],
-    repo: "#",
+    repo: "https://github.com/rahat-israil/Web-Application-Testing-02",
     category: "Manual",
     image: PhotoStudioImg,
     details: {
@@ -151,7 +151,7 @@ const projects: Project[] = [
       { label: "Quality Report", url: "#" },
       { label: "Bug Reports", url: "#" },
     ],
-    repo: "#",
+    repo: "https://github.com/rahat-israil/Android-Application-Testing-01",
     category: "Manual",
     image: FlutterQuizImg,
     mobile: true,
@@ -169,7 +169,7 @@ const projects: Project[] = [
         },
       ],
       note:
-        "The log collection practice — attaching device logs to every functional defect — significantly improved defect reproducibility and accelerated developer investigation. This goes beyond standard manual testing methodology.",
+        "The log collection practice - attaching device logs to every functional defect — significantly improved defect reproducibility and accelerated developer investigation. This goes beyond standard manual testing methodology.",
       result:
         "Detected and documented 100% of critical bugs, achieving an 80% overall bug finding ratio, with full log-based reproduction evidence provided for every functional defect.",
     },
@@ -178,7 +178,7 @@ const projects: Project[] = [
    // Project 4
   {
     title: "Calculator Menu - Web Application Testing",
-    desc: "Functional & logical testing of a Supershop billing module. 30 bugs found in calculation, discount & tax logic.",
+    desc: "Functional & logical testing of a Supershop billing module. 30 bugs found in calculation, discount logic.",
     tags: [
       "Manual Testing",
       "Functional Testing",
@@ -191,7 +191,7 @@ const projects: Project[] = [
       { label: "Bug Reports", url: "#" },
       { label: "Test Survey", url: "#" },
     ],
-    repo: "#",
+    repo: "https://github.com/rahat-israil/Web-Application-Testing-01",
     category: "Manual",
     image: CalculatorMenuImg,
     details: {
@@ -201,7 +201,7 @@ const projects: Project[] = [
         {
           bullets: [
             "Identified and reported 30 defects in JIRA related to calculation errors, currency formatting mismatches, discount logic failures, and tax computation inaccuracies",
-            "Applied Equivalence Partitioning and Boundary Value Analysis to billing arithmetic — including quantity multipliers, percentage discounts — to ensure financial accuracy",
+            "Applied Equivalence Partitioning and Boundary Value Analysis to billing arithmetic - including quantity multipliers, percentage discounts — to ensure financial accuracy",
             "Validated cart state management, confirming totals updated instantly when quantities were modified or items removed",
             "Documented the complete testing lifecycle through a Quality Report and Test Survey, ensuring financial data integrity",
           ],
@@ -227,7 +227,7 @@ const projects: Project[] = [
       { label: "Quality Report", url: "#" },
       { label: "Test Survey", url: "#" },
     ],
-    repo: "#",
+    repo: "https://github.com/rahat-israil/Android-Application-Testing-02",
     category: "Manual",
     image: VoicemailImg,
     mobile: true,
@@ -238,12 +238,12 @@ const projects: Project[] = [
         {
           bullets: [
             "Identified and reported 25 defects in JIRA covering voice recording functionality, playback behaviour, and system toggle (on/off) failures",
-            "Tested the core voice recording flow — record, save, re-record, and delete — to ensure message data was stored and retrieved correctly",
+            "Tested the core voice recording flow - record, save, re-record, and delete - to ensure message data was stored and retrieved correctly",
             "Validated automatic voicemail playback when calls went unanswered, checking trigger timing and audio playback quality",
             "Verified the on/off toggle correctly enabled/disabled the voicemail system, with no unexpected playback when turned off",
             "Captured application logs using Android Studio for functional defects to support reproducibility",
             "Tested across different device configurations for compatibility coverage",
-            "Documented findings through an Acceptance Sheet and Quality Report",
+            "Documented findings through an Test Survey and Quality Report",
           ],
         },
       ],
@@ -267,7 +267,7 @@ const projects: Project[] = [
       { label: "Bug Reports", url: "#" },
       { label: "Quality Report", url: "#" },
     ],
-    repo: "#",
+    repo: "https://github.com/rahat-israil/Web-Application-Testing-04",
     category: "Manual",
     image: ForkifyImg,
     details: {
@@ -278,7 +278,7 @@ const projects: Project[] = [
           bullets: [
             "Identified and reported 20 defects in JIRA covering recipe search functionality, UI/layout inconsistencies, and recipe detail page (ingredients, servings) errors",
             "Applied Boundary Value Analysis on servings/quantity adjustments to verify correct ingredient scaling",
-            "Verified core user flows — recipe search, bookmarking, and detail view — for correctness and edge-case handling",
+            "Verified core user flows - recipe search, bookmarking, and detail view - for correctness and edge-case handling",
             "Performed functional and cross-browser testing to ensure consistent behaviour across platforms",
             "Documented findings through Test Cases and a Quality Report",
           ],
@@ -301,7 +301,7 @@ const projects: Project[] = [
       "Cross-Browser Testing",
       "Responsive Testing",
     ],
-    repo: "#",
+    repo: "https://github.com/rahat-israil/BDTrip-Tourism-Web-Application-Testing",
     category: "Manual",
     image: BDTripImg,
     details: {
@@ -310,7 +310,7 @@ const projects: Project[] = [
       sections: [
         {
           bullets: [
-            "Validated 6 core modules — User Authentication, Destination Management, Service Booking, Admin Dashboard, Booking History, and CRUD operations",
+            "Validated 6 core modules - User Authentication, Destination Management, Service Booking, Admin Dashboard, Booking History, and CRUD operations",
             "Identified and documented 42+ defects, including booking status synchronization issues, client-side validation gaps, and cross-tab session management bugs",
             "Validated REST API endpoints using Postman, ensuring proper request/response handling and authentication checks",
             "Tested admin panel workflows with status tracking (Pending/Approved/Rejected)",
@@ -335,7 +335,7 @@ const projects: Project[] = [
       "Android Emulator",
       "UI/UX Validation",
     ],
-    repo: "#",
+    repo: "https://github.com/rahat-israil/Health-Care-Application-Android-Application-Testing",
     category: "Manual",
     image: HealthCareImg,
     mobile: true,
@@ -345,7 +345,7 @@ const projects: Project[] = [
       sections: [
         {
           bullets: [
-            "Validated 8 core modules — Lab Test Booking, Medicine Ordering, Doctor Appointment Scheduling, Health Articles, User Profile, Order Tracking, Registration, and Authentication",
+            "Validated 8 core modules - Lab Test Booking, Medicine Ordering, Doctor Appointment Scheduling, Health Articles, User Profile, Order Tracking, Registration, and Authentication",
             "Identified and documented 34+ defects throughout the testing lifecycle, including critical bugs in appointment slot synchronization and payment gateway integration, collaborating with developers for timely resolution",
             "Validated Firebase Realtime Database synchronization for real-time cart updates, order tracking, and doctor appointment availability",
             "Conducted UI/UX validation across different Android screen sizes using Android Emulator",
@@ -362,49 +362,49 @@ const projects: Project[] = [
   // ---------------- Automation Example Projects ----------------
 
    // Project 1
-  {
-    title: "ShopFlow - E-Commerce API Automation",
-    desc: "End-to-end REST API automation framework for an e-commerce platform. 120+ automated test cases covering auth, cart, checkout & order management with CI integration.",
-    tags: [
-      "REST Assured",
-      "Java",
-      "TestNG",
-      "API Automation",
-      "CI/CD (Jenkins)",
-      "Allure Reports",
-    ],
-    links: [
-      { label: "Automation Report", url: "#" },
-      { label: "Test Cases", url: "#" },
-    ],
-    repo: "#",
-    category: "Automation",
-    image: Automation1Img,
-    details: {
-      sections: [
-        {
-          heading: "Framework Highlights",
-          bullets: [
-            "Developed 120+ automated API test cases covering authentication, product catalog, cart management, checkout, and order tracking endpoints",
-            "Implemented data-driven testing using Excel and JSON feeds to validate positive, negative, and edge-case scenarios",
-            "Integrated the framework with Jenkins CI pipeline — tests run automatically on every pull request and nightly build",
-            "Generated rich Allure reports with request/response logs, assertions, and screenshots of failures for fast triage",
-            "Built reusable utility libraries for token handling, request payload generation, and response validation",
-          ],
-        },
-        {
-          heading: "Coverage Areas",
-          bullets: [
-            "Authentication & authorization — valid/invalid tokens, role-based access, session expiry",
-            "Cart & checkout — add/remove items, quantity updates, coupon application, payment validation",
-            "Order management — order creation, status transitions, cancellation, and refund flows",
-          ],
-        },
-      ],
-      result:
-        "Achieved 95% API test coverage across 40+ endpoints, reducing regression cycle time from 2 days to under 30 minutes, with zero critical defects escaping to production.",
-    },
-  },
+  // {
+  //   title: "ShopFlow - E-Commerce API Automation",
+  //   desc: "End-to-end REST API automation framework for an e-commerce platform. 120+ automated test cases covering auth, cart, checkout & order management with CI integration.",
+  //   tags: [
+  //     "REST Assured",
+  //     "Java",
+  //     "TestNG",
+  //     "API Automation",
+  //     "CI/CD (Jenkins)",
+  //     "Allure Reports",
+  //   ],
+  //   links: [
+  //     { label: "Automation Report", url: "#" },
+  //     { label: "Test Cases", url: "#" },
+  //   ],
+  //   repo: "#",
+  //   category: "Automation",
+  //   image: Automation1Img,
+  //   details: {
+  //     sections: [
+  //       {
+  //         heading: "Framework Highlights",
+  //         bullets: [
+  //           "Developed 120+ automated API test cases covering authentication, product catalog, cart management, checkout, and order tracking endpoints",
+  //           "Implemented data-driven testing using Excel and JSON feeds to validate positive, negative, and edge-case scenarios",
+  //           "Integrated the framework with Jenkins CI pipeline — tests run automatically on every pull request and nightly build",
+  //           "Generated rich Allure reports with request/response logs, assertions, and screenshots of failures for fast triage",
+  //           "Built reusable utility libraries for token handling, request payload generation, and response validation",
+  //         ],
+  //       },
+  //       {
+  //         heading: "Coverage Areas",
+  //         bullets: [
+  //           "Authentication & authorization — valid/invalid tokens, role-based access, session expiry",
+  //           "Cart & checkout — add/remove items, quantity updates, coupon application, payment validation",
+  //           "Order management — order creation, status transitions, cancellation, and refund flows",
+  //         ],
+  //       },
+  //     ],
+  //     result:
+  //       "Achieved 95% API test coverage across 40+ endpoints, reducing regression cycle time from 2 days to under 30 minutes, with zero critical defects escaping to production.",
+  //   },
+  // },
 
    // Project 2
   // {
@@ -755,7 +755,9 @@ const ProjectsSection = () => {
                 ))}
               </div>
 
-              {active.links && (
+            {/* Details modal er Button code start */}
+
+              {/* {active.links && (
                 <div className="flex flex-col sm:flex-row gap-3">
                   {active.links.map((link, i) => (
                     <Button
@@ -772,7 +774,10 @@ const ProjectsSection = () => {
                     </Button>
                   ))}
                 </div>
-              )}
+              )} */}
+
+              {/* Details modal er Button code end */}
+
             </>
           )}
         </DialogContent>
