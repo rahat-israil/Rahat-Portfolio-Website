@@ -25,14 +25,14 @@ const data: Record<TabKey, TimelineItem[]> = {
     {
       title: "Higher Secondary Certificate (HSC)",
       subtitle: "Science Group",
-      period: "2018 - 2021",
+      period: "2019 - 2021",
       description:
         "Completed HSC with a strong foundation in mathematics, physics, and computer fundamentals.",
     },
     {
       title: "Secondary School Certificate (SSC)",
       subtitle: "Science Group",
-      period: "2016 - 2018",
+      period: "2017 - 2018",
       description:
         "Built early interest in technology, problem-solving, and analytical thinking.",
     },
