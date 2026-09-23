@@ -18,7 +18,7 @@ import ForkifyImg from "@/assets/projects/Forkify.png";
 import BDTripImg from "@/assets/projects/BDTrip.png";
 import HealthCareImg from "@/assets/projects/HealthCare.png";
 import projectImage from "@/assets/project-image.png";
-import Automation1Img from "@/assets/projects/Automation1.jpg";
+import Automation1Img from "@/assets/projects/Automation1.png";
 import Automation2Img from "@/assets/projects/AUtomation.jpg";
 
 interface ProjectLink {
@@ -362,69 +362,72 @@ const projects: Project[] = [
   // ---------------- Automation Example Projects ----------------
 
    // Project 1
-  // {
-  //   title: "ShopFlow - E-Commerce API Automation",
-  //   desc: "End-to-end REST API automation framework for an e-commerce platform. 120+ automated test cases covering auth, cart, checkout & order management with CI integration.",
-  //   tags: [
-  //     "REST Assured",
-  //     "Java",
-  //     "TestNG",
-  //     "API Automation",
-  //     "CI/CD (Jenkins)",
-  //     "Allure Reports",
-  //   ],
-  //   links: [
-  //     { label: "Automation Report", url: "#" },
-  //     { label: "Test Cases", url: "#" },
-  //   ],
-  //   repo: "#",
-  //   category: "Automation",
-  //   image: Automation1Img,
-  //   details: {
-  //     sections: [
-  //       {
-  //         heading: "Framework Highlights",
-  //         bullets: [
-  //           "Developed 120+ automated API test cases covering authentication, product catalog, cart management, checkout, and order tracking endpoints",
-  //           "Implemented data-driven testing using Excel and JSON feeds to validate positive, negative, and edge-case scenarios",
-  //           "Integrated the framework with Jenkins CI pipeline — tests run automatically on every pull request and nightly build",
-  //           "Generated rich Allure reports with request/response logs, assertions, and screenshots of failures for fast triage",
-  //           "Built reusable utility libraries for token handling, request payload generation, and response validation",
-  //         ],
-  //       },
-  //       {
-  //         heading: "Coverage Areas",
-  //         bullets: [
-  //           "Authentication & authorization — valid/invalid tokens, role-based access, session expiry",
-  //           "Cart & checkout — add/remove items, quantity updates, coupon application, payment validation",
-  //           "Order management — order creation, status transitions, cancellation, and refund flows",
-  //         ],
-  //       },
-  //     ],
-  //     result:
-  //       "Achieved 95% API test coverage across 40+ endpoints, reducing regression cycle time from 2 days to under 30 minutes, with zero critical defects escaping to production.",
-  //   },
-  // },
+  {
+  title: "Automation Exercise - Login Automation",
+  desc: "End-to-end UI automation of the Login flow using Playwright and JavaScript, following the Page Object Model (POM) design pattern with stable data-qa selectors.",
+  tags: [
+    "Playwright",
+    "JavaScript",
+    "UI Automation",
+    "E2E Testing",
+    "Page Object Model",
+    "Functional Testing",
+  ],
+  links: [
+    { label: "Test Report", url: "#" },
+    { label: "Test Case", url: "#" },
+  ],
+  repo: "https://github.com/rahat-israil/automation-exercise-login-test",
+  category: "Automation",
+  image: Automation1Img,
+  details: {
+    intro:
+        "End-to-end UI automation of the Login flow using Playwright and JavaScript, following the Page Object Model (POM) design pattern with stable data-qa selectors.",
+    sections: [
+      {
+        heading: "Automation Highlights",
+        bullets: [
+          "Automated the complete user login flow on Automation Exercise, from Home page navigation to successful authentication",
+          "Implemented the Page Object Model (POM) to separate page interactions from test logic and improve maintainability",
+          "Used stable data-qa attributes for reliable element identification and reduced dependency on UI styling",
+          "Automated credential input, login submission, and successful authentication verification",
+          "Validated post-login navbar elements including 'Logged in as <name>', Logout, and Delete Account",
+        ],
+      },
+      {
+        heading: "Test Coverage",
+        bullets: [
+          "Navigation - Home page to Signup / Login page",
+          "Login - registered email and password submission",
+          "Authentication - successful login verification",
+          "UI validation - Logged in as, Logout, and Delete Account elements",
+        ],
+      },
+    ],
+    result:
+      "Successfully automated and validated the complete login journey using Playwright Test, demonstrating practical experience with E2E UI automation, POM, stable selectors, and functional validation.",
+  },
+},
 
    // Project 2
   // {
-  //   title: "CloudBank — Web UI Automation (Playwright)",
-  //   desc: "Cross-browser web UI automation suite for a banking dashboard. 80+ automated tests with Page Object Model, visual regression & parallel execution.",
+  //   title: "Automation Exercise - Login Automation",
+  //   desc: "End-to-end UI automation of the Login flow using Playwright and JavaScript, following the Page Object Model (POM) design pattern with stable data-qa selectors.",
   //   tags: [
   //     "Playwright",
-  //     "TypeScript",
+  //     "JavaScript",
+  //     "UI Automation",
+  //     "E2E Testing",
   //     "Page Object Model",
-  //     "Cross-Browser",
-  //     "Visual Regression",
-  //     "GitHub Actions",
+  //     "Functional Testing",
   //   ],
   //   links: [
   //     { label: "Automation Report", url: "#" },
   //     { label: "Test Suites", url: "#" },
   //   ],
-  //   repo: "#",
+  //   repo: "https://github.com/rahat-israil/automation-exercise-login-test",
   //   category: "Automation",
-  //   image: Automation2Img,
+  //   image: Automation1Img,
   //   details: {
   //     intro:
   //       "Built a robust cross-browser UI automation framework for CloudBank, an online banking web application, using Playwright and TypeScript with the Page Object Model design pattern.",
