@@ -361,9 +361,62 @@ const projects: Project[] = [
 
   // ---------------- Automation Example Projects ----------------
 
-   // Project 1
+  // Project 1
   {
-  title: "Automation Exercise - Login Automation",
+  title: "E-Commerce End-to-End Test Automation",
+  desc: "End-to-end UI automation of the complete customer journey (registration, login, cart, checkout and order confirmation) using Java and Selenium WebDriver, with dynamic test data, CDP-based ad blocking and explicit waits.",
+  tags: [
+    "Java",
+    "Selenium WebDriver",
+    "UI Automation",
+    "E2E Testing",
+    "Chrome DevTools Protocol",
+    "Explicit Waits",
+    "Functional Testing",
+  ],
+  links: [
+    { label: "Test Report", url: "#" },
+    { label: "Test Case", url: "#" },
+  ],
+  repo: "https://github.com/rahat-israil/E2E-Test-Automation",
+  category: "Automation",
+  image: Automation1Img,
+  details: {
+    intro:
+        "End-to-end UI automation of the complete customer journey on E-Commerce, covering user registration, login, product selection, checkout and order confirmation in a single continuous run using Java and Selenium WebDriver.",
+    sections: [
+      {
+        heading: "Automation Highlights",
+        bullets: [
+          "Automated the full e-commerce flow: registration → login → add to cart → checkout → 'ORDER PLACED!' verification",
+          "Generated a unique email on every run with System.currentTimeMillis(), so tests never fail due to duplicate accounts",
+          "Blocked ad-network requests (googlesyndication, doubleclick, googleadservices) using Chrome DevTools Protocol to prevent ElementClickInterceptedException and flaky tests",
+          "Used explicit waits (WebDriverWait with ExpectedConditions) instead of Thread.sleep() for stable handling of modals and payment forms",
+          "Reused the authenticated browser session by returning the live WebDriver from Login and passing it into Checkout",
+          "Centralized all test data (credentials, address, card details) in a single TestData class with no hard-coded values in test classes",
+          "Handled date of birth and country dropdowns using Selenium's Select class with XPath locators",
+          "Added PASS / FAIL result verification for every module, visible directly in the console",
+        ],
+      },
+      {
+        heading: "Test Coverage",
+        bullets: [
+          "Registration - Name and unique email signup, account information, date of birth and full address details",
+          "Login - Authentication using the newly registered credentials with logged-in header verification",
+          "Checkout - Adding two products to the cart, proceeding to checkout, order comment and payment details",
+          "Order confirmation - 'ORDER PLACED!' message verification",
+        ],
+      },
+    ],
+    result:
+      "Successfully automated and validated the complete purchase journey with Java and Selenium WebDriver, demonstrating practical experience with E2E UI automation, dynamic test data, CDP-based ad blocking, explicit waits, session reuse and modular, maintainable test design.",
+  },
+},
+
+
+   // Project 2
+  {
+  title: "E-Commerce Login Automation",
   desc: "End-to-end UI automation of the Login flow using Playwright and JavaScript, following the Page Object Model (POM) design pattern with stable data-qa selectors.",
   tags: [
     "Playwright",
