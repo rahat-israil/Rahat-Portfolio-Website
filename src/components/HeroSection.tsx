@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Eye, FileText } from "lucide-react";
 import RobotVisual from "@/components/RobotVisual";
 
-const CV_DRIVE_LINK = "https://drive.google.com/file/d/1XIjOPZQ-Cc926ncIgfNuoB3uMcGQKIAA/view?usp=sharing";
+const CV_DRIVE_LINK = "https://drive.google.com/file/d/1hqCp7VlJf-xc7J0vVC3M0QiNUPx7U7zN/view?usp=sharing";
 
 const roles = ["Manual", "Automation", "API", "Performance"];
 
